@@ -1,0 +1,25 @@
+{
+  "name": "Basic Map",
+  "description": "Simple, clean web map template",
+  "version": "1.0",
+  "author": "WebGisMapBuilder",
+  "features": [
+    "Leaflet integration",
+    "Basemap support",
+    "Layer control",
+    "Popups",
+    "Responsive design"
+  ],
+  "supported_layer_types": ["point", "line", "polygon"],
+  "default_settings": {
+    "map": {
+      "center": [0, 0],
+      "zoom": 2
+    },
+    "ui": {
+      "show_zoom_control": true,
+      "show_scale_control": true,
+      "show_layer_control": true
+    }
+  }
+}

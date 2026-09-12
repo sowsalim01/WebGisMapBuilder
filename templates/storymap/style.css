@@ -1,0 +1,294 @@
+/* Story Map Template Styles - Professional Consistent Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.storymap-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+#map {
+    flex: 1;
+    height: 100%;
+}
+
+.storymap-sidebar {
+    width: 400px;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.storymap-header {
+    padding: 30px 30px 20px 30px;
+    border-bottom: 2px solid #3498db;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+}
+
+.storymap-header h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.storymap-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    margin: 0;
+}
+
+.storymap-sections {
+    padding: 30px;
+}
+
+.storymap-section {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.storymap-section:last-child {
+    border-bottom: none;
+}
+
+.storymap-section:hover {
+    background: #f8f9fa;
+}
+
+.storymap-section.active {
+    border-left: 4px solid #3498db;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(52, 152, 219, 0.05));
+}
+
+.storymap-section h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.storymap-section p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.storymap-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* Custom Popup Styling */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.leaflet-popup-content {
+    margin: 12px;
+    max-width: 350px;
+}
+
+.popup-header {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+    font-size: 16px;
+}
+
+.popup-field {
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+.popup-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-right: 4px;
+}
+
+.popup-value {
+    color: #555;
+}
+
+/* Legend Styles - Professional Consistent Styling */
+.legend {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 13px;
+    max-width: 280px;
+}
+
+.legend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.legend-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #3498db;
+    padding: 0 8px;
+}
+
+.legend-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.legend-group {
+    margin-bottom: 12px;
+}
+
+.legend-layer-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 6px;
+    font-size: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #eee;
+}
+
+.legend-row {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    padding: 3px 0;
+}
+
+.legend-swatch {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.legend-text {
+    color: #555;
+    font-size: 12px;
+    word-break: break-word;
+}
+
+/* Leaflet Legend Control */
+.leaflet-legend-box {
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    font-size: 12px;
+}
+
+.leaflet-legend-title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.leaflet-legend-item {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.leaflet-legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+}
+
+.leaflet-legend-label {
+    color: #555;
+}
+
+/* Responsive Story Map */
+@media (max-width: 1024px) {
+    .storymap-sidebar {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .storymap-container {
+        flex-direction: column;
+    }
+
+    .storymap-sidebar {
+        width: 100%;
+        max-height: 40vh;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    }
+
+    .storymap-sections {
+        padding: 20px;
+    }
+
+    .storymap-section h2 {
+        font-size: 20px;
+    }
+
+    .legend {
+        max-width: 240px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .storymap-sections {
+        padding: 15px;
+    }
+
+    .storymap-section h2 {
+        font-size: 18px;
+    }
+
+    .storymap-section p {
+        font-size: 14px;
+    }
+
+    .legend {
+        max-width: 200px;
+        font-size: 11px;
+    }
+
+    .legend-swatch {
+        width: 14px;
+        height: 14px;
+    }
+}

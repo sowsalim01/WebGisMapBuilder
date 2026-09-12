@@ -1,0 +1,26 @@
+{
+  "name": "Story Map",
+  "description": "Interactive story map with scroll-based navigation",
+  "version": "1.0",
+  "author": "WebGisMapBuilder",
+  "features": [
+    "Leaflet integration",
+    "Story-based navigation",
+    "Scroll sections",
+    "Layer control",
+    "Popups",
+    "Responsive design"
+  ],
+  "supported_layer_types": ["point", "line", "polygon"],
+  "default_settings": {
+    "map": {
+      "center": [0, 0],
+      "zoom": 2
+    },
+    "ui": {
+      "show_zoom_control": true,
+      "show_scale_control": true,
+      "sidebar_width": 400
+    }
+  }
+}

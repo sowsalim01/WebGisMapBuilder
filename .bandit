@@ -1,0 +1,8 @@
+[bandit]
+# Bandit configuration for WebGisMapBuilder
+# This file contains security analysis exclusions for false positives
+
+# Exclude B608 (hardcoded SQL expressions) for JavaScript generators
+# These files generate JavaScript source code, not SQL queries
+# The false positive occurs because JavaScript comments contain SELECT-like keywords
+exclude_tests = ['B608']

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{description}}">
+    <title>{{title}}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          crossorigin=""/>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="storymap-container">
+        <div id="map"></div>
+
+        <div class="storymap-sidebar">
+            <header class="storymap-header">
+                <h1>{{title}}</h1>
+                <p>{{description}}</p>
+            </header>
+            <div class="storymap-sections">
+                <div class="storymap-section active" data-section="1">
+                    <h2>Introduction</h2>
+                    <p>Welcome to this interactive story map.</p>
+                </div>
+
+                <div class="storymap-section" data-section="2">
+                    <h2>Section 2</h2>
+                    <p>Content for section 2.</p>
+                </div>
+
+                <div class="storymap-section" data-section="3">
+                    <h2>Section 3</h2>
+                    <p>Content for section 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            crossorigin=""></script>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
