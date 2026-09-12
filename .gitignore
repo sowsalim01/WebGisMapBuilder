@@ -9,3 +9,4 @@
 **pycache**/
 *.py[cod]
 *$py.class
+SECURITY_AUDIT_REPORT.md
